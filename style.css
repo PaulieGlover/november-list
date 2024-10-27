@@ -62,6 +62,11 @@ legend h1 {
     color: #0b324f;
 }
 
+ol > li::marker {
+    font-size: smaller;
+    font-weight: bold;
+}
+
 .main {
     flex: 2;
 }
