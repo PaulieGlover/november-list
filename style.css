@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Underdog&display=swap');
+
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #000911;
+    color: #96ccff;
+}
+
+fieldset {
+    border: 3px solid #96ccff;
+    margin: 2em;
+    padding-right: 0;
+    padding-bottom: 0;
+    background-image: url(background-ref.png);
+    background-size: cover;    
+    display: grid;
+    /*grid-template-columns: repeat(2, minmax(auto, 1fr));
+    grid-template-areas:
+        "header header"
+        "main bonus"; */
+    max-width: 50em;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   }
+
+legend {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+legend h1 {
+    margin-bottom: 0;
+}
+
+.header {
+    /*grid-area: header; */
+    text-align: center;
+    width: 100%
+}
+
+.bonus {
+    flex: 1;
+    background-color: #96ccffff;
+   /* grid-area: bonus; */
+    margin-bottom: 0;
+    margin-right: 0;
+    padding: 1em;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.bonus li,
+.bonus h2 {
+    color: #0b324f;
+}
+
+.main {
+    flex: 2;
+}
+
+.header p {
+    color: #96ccff;
+    font-weight: 500;
+    font-size: larger;
+    padding-right: 1em;
+}
+
+li {
+    padding-bottom: 0.3em;
+}
+
+footer {
+    font-size: smaller;
+    padding: 0 0.3em;
+    text-align: right;
+    position: absolute;
+    bottom: -0.5em;
+    right: 1em;
+    background-color: #000911;
+}
+
+footer p {margin: 0;}
+
+a, a:visited {color: #96ccff;}
