@@ -2,18 +2,21 @@
 
 
 body {
-    font-family: "Montserrat", sans-serif;
     background-color: #000911;
+}
+
+.november-list {
+    font-family: "Montserrat", sans-serif;
     color: #96ccff;
 }
 
-fieldset {
+fieldset.november-list {
     border: 3px solid #96ccff;
     margin: 2em;
     padding-right: 0;
     padding-bottom: 0;
     background-image: url(background-ref.png);
-    background-size: cover;    
+    background-size: cover;
     display: grid;
     /*grid-template-columns: repeat(2, minmax(auto, 1fr));
     grid-template-areas:
@@ -25,32 +28,32 @@ fieldset {
     position: relative;
 }
 
-.content {
+.november-list .content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-   }
+}
 
-legend {
+.november-list legend {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
 }
 
-legend h1 {
+.november-list legend h1 {
     margin-bottom: 0;
 }
 
-.header {
+.november-list .header {
     /*grid-area: header; */
     text-align: center;
     width: 100%
 }
 
-.bonus {
+.november-list .bonus {
     flex: 1;
     background-color: #96ccffff;
-   /* grid-area: bonus; */
+    /* grid-area: bonus; */
     margin-bottom: 0;
     margin-right: 0;
     padding: 1em;
@@ -58,32 +61,43 @@ legend h1 {
     mix-blend-mode: exclusion;
 }
 
-.bonus li,
-.bonus h2 {
+.november-list .bonus li,
+.november-list .bonus h2 {
     color: #0b324f;
 }
 
-ol > li::marker {
+.november-list .bonus ol {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s;
+}
+
+.november-list .bonus:hover ol,
+.november-list .bonus:active ol {
+    max-height: 10em;
+}
+
+.november-list ol>li::marker {
     font-size: smaller;
     font-weight: bold;
 }
 
-.main {
+.november-list .main {
     flex: 2;
 }
 
-.header p {
+.november-list .header p {
     color: #96ccff;
     font-weight: 500;
     font-size: larger;
     padding-right: 1em;
 }
 
-li {
+.november-list li {
     padding-bottom: 0.3em;
 }
 
-footer {
+.november-list footer {
     font-size: smaller;
     padding: 0 0.3em;
     text-align: right;
@@ -93,6 +107,11 @@ footer {
     background-color: #000911;
 }
 
-footer p {margin: 0;}
+.november-list footer p {
+    margin: 0;
+}
 
-a, a:visited {color: #96ccff;}
+.november-list a,
+.november-list a:visited {
+    color: #96ccff;
+}
