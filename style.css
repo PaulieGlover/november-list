@@ -50,7 +50,7 @@ fieldset.november-list {
     width: 100%
 }
 
-.november-list .bonus {
+.november-list details {
     flex: 1;
     background-color: #96ccffff;
     /* grid-area: bonus; */
@@ -61,20 +61,17 @@ fieldset.november-list {
     mix-blend-mode: exclusion;
 }
 
-.november-list .bonus li,
-.november-list .bonus h2 {
+.november-list details li,
+.november-list details summary {
     color: #0b324f;
 }
 
-.november-list .bonus ol {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 1s;
+.november-list details summary {
+    display: flex;
 }
 
-.november-list .bonus:hover ol,
-.november-list .bonus:active ol {
-    max-height: 10em;
+.november-list details ol {
+    overflow: hidden;
 }
 
 .november-list ol>li::marker {

@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -37,15 +37,16 @@
                 </p>
             </div>
 
-            <div class="bonus">
-                <h2>Бонус-трек</h2>
-                <p>
+            <details
+                onmouseover="this.setAttribute('open', true)"
+                onmouseout="this.removeAttribute('open')"
+            >
+                <summary><h2>Бонус-трек</h2></summary>
                 <ol>
                     <li>Картошка</li>
                     <li>Волк, не выступающий в цирке, или любые другие волчьи цитаты</li>
                     <li>Фарфоровый сервиз Волка Ларсена</li>
                 </ol>
-                </p>
             </div>
         </div>
         <footer>
